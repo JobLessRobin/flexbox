@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dashboard {
+    display: flex;
+    height: 100vh; /* Full height */
+}
+
+.sidebar {
+    flex: 0 0 15%; /* Make sidebar flexible (responsive to screen size) */
+    background: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center; /* align horizontally because flex direction: column */
+}
+
+
+.sidebar h2, .sidebar ul li {
+    margin: 10px;
+}
+
+.main-content {
+    flex: 1; /* Fill remaining space */
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.widgets-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow widgets to wrap */
+    gap: 20px; /* Space between widgets */
+    padding: 20px;
+    flex-grow: 1; /* Ensure widgets take up remaining space */
+}
+
+.widget {
+    flex: 1 250px; /* Widgets auto-resize with minimum width */
+    background: #2196F3;
+    color: white;
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    min-width: 150px; /* Ensure widgets don't get too small */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /* Push footer to bottom */
+}
